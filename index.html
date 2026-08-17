@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change VND to USD</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/jpeg" href="photos_and_videos/ava.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop playsinline class="backgroundvideo">
+        <source src="photos_and_videos/rainy-valley.3840x2160.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="logo">
+            <img src="photos_and_videos/ava.jpg" alt="logo" class="logo-img">
+        </div>
+        <h1 class="title">VND to USD Converter</h1>
+        <p class="made-by">Made by Vinh</p>
+        <input type="text" id="vnd" class="input" placeholder="Enter amount in VND">
+        <br>
+        <button onclick="converttousd()" id="doi" class="button"><p class="button-text">Convert</p></button>
+        <br>
+        <div id="result" class="kq"></div>
+    <footer class="footer">
+        <p>© 2026 Vinh Nguyen. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+<script>
+    function converttousd(){
+        var a = 26300;
+        var vnd = document.getElementById("vnd").value;
+        if(!vnd){
+            window.alert("Please enter an amount in VND!");
+        }
+        else{
+            var usd = vnd/a;
+            document.getElementById("result").innerHTML = "The amount in USD is: " + usd.toFixed(2);
+        }
+    }
+</script>
+
+</html>

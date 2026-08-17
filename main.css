@@ -1,0 +1,126 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : 400px;
+    height: 100vh;
+    margin: 40px auto 0 auto;
+    border-radius: 50px;
+    /* liquid glass */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+.logo-img{
+    border-radius: 50%;
+    margin-bottom: 40px;
+    object-fit: cover;
+    display: block;
+    height: 200px; 
+    width: 200px;
+    margin-top:-80px;
+}
+.button{
+    width:200px;
+    height:60px;
+    border-radius:36px;
+    margin-top:20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, filter 0.25s ease; 
+}
+.button:hover{
+    transform: translateY(-8px) scale(1.15);
+    filter: drop-shadow(0 8px px rgba(0, 0, 0, 0.3));
+}
+.title{
+    font-size :30px;
+    font-family: 'Mali', cursive;
+    margin-bottom: 15px;
+    margin-top: -4px;
+}
+.made-by{
+    font-size:20px;
+    font-family: 'Mali', cursive;
+    margin-top:-1px;
+    margin-bottom: 50px;
+}
+.input{
+    height: 40px;
+    width:300px;
+    font-size:20px;
+    font-family: 'Mali', cursive;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 28px 14px rgba(255, 255, 255, 1.4);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+.input:hover{
+    transform: translateY(-8px) scale(1.15);
+    filter: drop-shadow(0 8px px rgba(0, 0, 0, 0.3));
+}
+.kq{
+    font-size:20px;
+    font-family: 'Mali', cursive;
+    margin-top:-1px;
+    margin-bottom: 50px;
+    color: white;
+}
+.backgroundvideo {
+    position: fixed;
+    left:0;
+    top: 0 ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+.button-text{
+    font-size:30px;
+    margin-bottom: -7px;
+    margin-top: -10px;
+    font-family: 'Mali', cursive;
+    color: white;
+}
+.footer{
+    position: relative;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Mali', sans-serif;
+    margin-bottom:-100px;
+}
